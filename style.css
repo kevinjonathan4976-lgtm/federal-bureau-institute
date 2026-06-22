@@ -97,7 +97,7 @@ font-size:16px;
 /* HERO */
 
 .hero{
-min-height:250vh;
+min-height:80vh;
 height: auto;
 
 display:flex;
