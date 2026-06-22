@@ -412,3 +412,38 @@ border:none;
 padding:0 20px;
 cursor:pointer;
 }
+
+.director-section{
+padding:80px 8%;
+}
+
+.director-card{
+display:flex;
+gap:30px;
+align-items:center;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.director-card img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+}
+
+@media(max-width:768px){
+
+.director-card{
+flex-direction:column;
+text-align:center;
+}
+
+.director-card img{
+width:180px;
+height:180px;
+}
+
+}
