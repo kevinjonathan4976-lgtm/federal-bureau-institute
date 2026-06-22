@@ -97,17 +97,24 @@ font-size:16px;
 /* HERO */
 
 .hero{
-height:90vh;
+height:100vh;
+
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+
 padding:20px;
+
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 url("hero.jpg");
+
 background-size:cover;
-background-position:center;
+background-position:center center;
+background-repeat:no-repeat;
+
+overflow:hidden;
 }
 
 .hero-content{
