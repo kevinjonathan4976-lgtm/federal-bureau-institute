@@ -97,7 +97,7 @@ font-size:16px;
 /* HERO */
 
 .hero{
-min-height:500vh;
+min-height:250vh;
 height: auto;
 
 display:flex;
@@ -111,7 +111,7 @@ background:
 linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 url("hero.jpg");
 
-background-size:contain;
+background-size:cover;
 background-position:center center;
 background-repeat:no-repeat;
 
