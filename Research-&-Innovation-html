@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research & Innovation | Federal Bureau Institute</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+<div class="logo">FBI</div>
+<nav class="navbar">
+<a href="index.html">Home</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h1>Research & Innovation Center</h1>
+
+<p><strong>Published:</strong> June 2026</p>
+
+<br>
+
+<p>
+The Research & Innovation Center drives technological advancement
+through scientific exploration and experimental development.
+</p>
+
+<br>
+
+<p>
+Our teams focus on solving real-world problems using emerging technologies,
+data science, and engineering solutions.
+</p>
+
+<br>
+
+<p>
+We encourage creativity, experimentation, and collaboration to build
+future-ready systems and tools.
+</p>
+
+<br>
+
+<h2>Focus Areas</h2>
+
+<ul>
+<li>Applied Research</li>
+<li>Technology Development</li>
+<li>Prototype Engineering</li>
+<li>Data Science Projects</li>
+<li>Innovation Labs</li>
+<li>Experimental Systems</li>
+</ul>
+
+<br>
+
+<a href="index.html" class="btn">Back to Home</a>
+
+</section>
+
+<footer>
+<p>Federal Bureau Institute — Educational Demonstration Project.</p>
+</footer>
+
+</body>
+</html>
