@@ -27,6 +27,8 @@ emailjs.sendForm(
     status.innerHTML =
     "❌ Failed to send message.";
 
+    alert(JOSN.stringify(error);
+
     console.error(error);
 
 });
