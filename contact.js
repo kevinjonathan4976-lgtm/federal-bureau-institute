@@ -1,5 +1,9 @@
+console.logo("contact.js loaded")
+
 document.getElementById("contactForm")
 .addEventListener("submit", function(event) {
+
+console.logo("Form submitted");
 
 event.preventDefault();
 
