@@ -256,17 +256,31 @@ Applications now open for listings.
 
 <form id="contactForm">
 
-<input type="text" placeholder="Full Name" required>
+<input
+type="text"
+name="user_name"
+placeholder="Full Name"
+required>
 
-<input type="email" placeholder="Email Address" required>
+<input
+type="email"
+name="user_email"
+placeholder="Email Address"
+required>
 
-<textarea rows="5" placeholder="Your Message"></textarea>
+<textarea
+name="message"
+rows="5"
+placeholder="Your Message"
+required></textarea>
 
 <button type="submit">
 Send Message
 </button>
 
 </form>
+
+<p id="status"></p>
 
 </section>
 
