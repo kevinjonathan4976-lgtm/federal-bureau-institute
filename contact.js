@@ -12,7 +12,7 @@ const status = document.getElementById("status");
 status.innerHTML = "Sending message...";
 
 emailjs.sendForm(
-    "FBI_contact_gmail",
+    "FBI-contact-gmail",
     "template_kcl3en9",
     this
 )
