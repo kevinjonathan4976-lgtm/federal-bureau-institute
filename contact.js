@@ -1,43 +1,40 @@
-console.logo("contact.js loaded")
+console.log("contact.js loaded");
 
 document.getElementById("contactForm")
 .addEventListener("submit", function(event) {
 
-console.logo("Form submitted");
+    console.log("Form submitted");
 
-alert("Form submitted");
-    
-event.preventDefault();
+    event.preventDefault();
 
-});
+    const status = document.getElementById("status");
 
-const status = document.getElementById("status");
+    status.innerHTML = "Sending message...";
 
-status.innerHTML = "Sending message...";
+    emailjs.sendForm(
+        "FBI-contact-gmail",
+        "template_kcl3en9",
+        this
+    )
 
-emailjs.sendForm(
-    "FBI-contact-gmail",
-    "template_kcl3en9",
-    this
-)
+    .then(() => {
 
-.then(() => {
+        status.innerHTML =
+        "✅ Message sent successfully.";
 
-    status.innerHTML =
-    "✅ Message sent successfully.";
+        this.reset();
 
-    this.reset();
+    })
 
-})
+    .catch((error) => {
 
-.catch((error) => {
+        status.innerHTML =
+        "❌ Failed to send message.";
 
-    status.innerHTML =
-    "❌ Failed to send message.";
+        alert(JSON.stringify(error));
 
-   alert(JSON.stringify(error)); 
-   console.error(error);
+        console.error(error);
 
-});
+    });
 
 });
