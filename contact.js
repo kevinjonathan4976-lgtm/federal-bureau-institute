@@ -10,6 +10,10 @@ document.getElementById("contactForm")
     const status = document.getElementById("status");
     const form = this;
 
+ console.log("Name:", form.name.value);
+console.log("Email:", form.email.value);
+console.log("Title:", form.title.value);
+    
     status.innerHTML = "Sending message...";
 
     // Send notification to your Gmail
