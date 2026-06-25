@@ -25,33 +25,18 @@ status.innerHTML = "Sending message...";
 
     .then(() => {
 
-        // Send confirmation to visitor
-        return emailjs.sendForm(
-            "FBI-contact-gmail",
-            "template_h7mcp39",
-            form
-        );
-
-    })
-
-    .then(() => {
-
-        status.innerHTML =
-        "✅ Message sent successfully.";
-
-        form.reset();
-
-    })
-
-    .catch((error) => {
-
-        status.innerHTML =
-        "❌ Failed to send message.";
-
-        alert(JSON.stringify(error));
-
-        console.error(error);
-
-    });
-
+emailjs.sendForm(
+    "FBI-contact-gmail",
+    "template_kcl3en9",
+    form
+)
+.then(() => {
+    status.innerHTML =
+    "✅ Message sent successfully.";
+    form.reset();
+})
+.catch((error) => {
+    status.innerHTML =
+    "❌ Failed to send message.";
+    alert(JSON.stringify(error));
 });
