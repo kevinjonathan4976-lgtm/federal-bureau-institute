@@ -10,11 +10,23 @@ document.getElementById("contactForm")
 
     status.innerHTML = "Sending message...";
 
+    // Send notification to your Gmail
     emailjs.sendForm(
         "FBI-contact-gmail",
         "template_kcl3en9",
         form
     )
+
+    .then(() => {
+
+        // Send confirmation email to visitor
+        return emailjs.sendForm(
+            "FBI-contact-gmail",
+            "template_h7mcp39",
+            form
+        );
+
+    })
 
     .then(() => {
 
