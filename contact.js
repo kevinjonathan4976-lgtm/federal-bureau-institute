@@ -5,7 +5,11 @@ document.getElementById("contactForm")
 
 console.logo("Form submitted");
 
+alert("Form submitted");
+    
 event.preventDefault();
+
+});
 
 const status = document.getElementById("status");
 
@@ -31,7 +35,7 @@ emailjs.sendForm(
     status.innerHTML =
     "❌ Failed to send message.";
 
-   alert(JOSN.stringify(error); 
+   alert(JSON.stringify(error)); 
    console.error(error);
 
 });
