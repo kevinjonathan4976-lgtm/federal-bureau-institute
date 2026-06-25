@@ -8,14 +8,14 @@ document.getElementById("contactForm")
     event.preventDefault();
 
     const status = document.getElementById("status");
-    const form = this;
+const form = this;
 
- console.log("Name:", form.name.value);
-console.log("Email:", form.email.value);
-console.log("Title:", form.title.value);
+alert("Name: " + form.name.value);
+alert("Email: " + form.email.value);
+alert("Title: " + form.title.value);
+
+status.innerHTML = "Sending message...";
     
-    status.innerHTML = "Sending message...";
-
     // Send notification to your Gmail
     emailjs.sendForm(
         "FBI-contact-gmail",
