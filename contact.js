@@ -9,10 +9,10 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
     status.innerHTML = "Sending message...";
 
-    console.log(form.name.value);
-console.log(form.email.value);
-console.log(form.title.value);
-
+    alert("Name: " + form.name.value);
+alert("Email: " + form.email.value);
+alert("Title: " + form.title.value);
+    
     emailjs.sendForm(
         "FBI-contact-gmail",
         "template_kcl3en9",
